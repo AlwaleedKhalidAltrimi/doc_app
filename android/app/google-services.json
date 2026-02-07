@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "388765456716",
+    "project_id": "doc-app-faeed",
+    "storage_bucket": "doc-app-faeed.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388765456716:android:6701309b2400cdf19497e9",
+        "android_client_info": {
+          "package_name": "com.example.doc_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzBApgEHXm0Q5xR50eHo5nwzySBZpgQzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
