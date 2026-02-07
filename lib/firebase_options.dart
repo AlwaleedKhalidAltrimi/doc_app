@@ -3,7 +3,6 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
@@ -42,7 +41,7 @@ class DefaultFirebaseOptions {
   }
 
   static FirebaseOptions web = FirebaseOptions(
-    apiKey: dotenv.env['FIREBASE_API_KEY_WEB']!,
+    apiKey: const String.fromEnvironment('FIREBASE_API_KEY_WEB'),
     appId: '1:388765456716:web:20d84f371f45e4979497e9',
     messagingSenderId: '388765456716',
     projectId: 'doc-app-faeed',
@@ -52,7 +51,7 @@ class DefaultFirebaseOptions {
   );
 
   static FirebaseOptions android = FirebaseOptions(
-    apiKey: dotenv.env['FIREBASE_API_KEY_ANDROID']!,
+    apiKey: const String.fromEnvironment('FIREBASE_API_KEY_ANDROID'),
     appId: '1:388765456716:android:6701309b2400cdf19497e9',
     messagingSenderId: '388765456716',
     projectId: 'doc-app-faeed',
@@ -60,7 +59,7 @@ class DefaultFirebaseOptions {
   );
 
   static FirebaseOptions ios = FirebaseOptions(
-    apiKey: dotenv.env['FIREBASE_API_KEY_IOS']!,
+    apiKey: const String.fromEnvironment('FIREBASE_API_KEY_IOS'),
     appId: '1:388765456716:ios:c748d594550e1c169497e9',
     messagingSenderId: '388765456716',
     projectId: 'doc-app-faeed',
@@ -69,7 +68,7 @@ class DefaultFirebaseOptions {
   );
 
   static FirebaseOptions macos = FirebaseOptions(
-    apiKey: dotenv.env['FIREBASE_API_KEY_IOS']!,
+    apiKey: const String.fromEnvironment('FIREBASE_API_KEY_IOS'),
     appId: '1:388765456716:ios:c748d594550e1c169497e9',
     messagingSenderId: '388765456716',
     projectId: 'doc-app-faeed',
@@ -78,7 +77,7 @@ class DefaultFirebaseOptions {
   );
 
   static FirebaseOptions windows = FirebaseOptions(
-    apiKey: dotenv.env['FIREBASE_API_KEY_WEB']!,
+    apiKey: const String.fromEnvironment('FIREBASE_API_KEY_WEB'),
     appId: '1:388765456716:web:dd2ec4ac695b0a669497e9',
     messagingSenderId: '388765456716',
     projectId: 'doc-app-faeed',
