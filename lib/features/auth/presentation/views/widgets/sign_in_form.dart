@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../../../../core/helper/app_regex.dart';
 import '../../../../../core/helper/spacing.dart';
+import '../../../../../core/utils/app_colors.dart';
 import '../../../../../core/widgets/app_text_form_field.dart';
 import '../../providers/log_in_provider.dart';
 import 'password_validations.dart';
@@ -42,6 +43,7 @@ class SignInForm extends StatelessWidget {
                     loginProvider.togglePasswordVisibility();
                   },
                   child: Icon(
+                    color: AppColors.black,
                     loginProvider.isObscureText
                         ? Icons.visibility_off
                         : Icons.visibility,

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../../../../core/helper/app_regex.dart';
 import '../../../../../core/helper/spacing.dart';
+import '../../../../../core/utils/app_colors.dart';
 import '../../../../../core/widgets/app_drop_down_form_field.dart';
 import '../../../../../core/widgets/app_text_form_field.dart';
 import '../../providers/sign_up_provider.dart';
@@ -69,6 +70,7 @@ class SignUpForm extends StatelessWidget {
                     signupProvider.togglePasswordVisibility();
                   },
                   child: Icon(
+                    color: AppColors.black,
                     signupProvider.isObscureText
                         ? Icons.visibility_off
                         : Icons.visibility,
@@ -92,6 +94,7 @@ class SignUpForm extends StatelessWidget {
                     signupProvider.togglePasswordVisibility();
                   },
                   child: Icon(
+                    color: AppColors.black,
                     signupProvider.isObscureText
                         ? Icons.visibility_off
                         : Icons.visibility,
