@@ -10,7 +10,7 @@ import '../di/dependency_injection.dart';
 import 'routes.dart';
 
 class AppRouter {
-  Route generateRoute(RouteSettings settings) {
+  Route? generateRoute(RouteSettings settings) {
     //this arguments to be passed in any screen like this ( arguments as ClassName )
     final arguments = settings.arguments;
 
@@ -36,11 +36,7 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const HomeView());
 
       default:
-        return MaterialPageRoute(
-          builder: (_) => Scaffold(
-            body: Center(child: Text('No route defined for ${settings.name}')),
-          ),
-        );
+        return null;
     }
   }
 }
