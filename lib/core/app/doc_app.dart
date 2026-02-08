@@ -1,6 +1,7 @@
 import 'package:doc_app/core/routes/app_router.dart';
 import 'package:doc_app/core/routes/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../utils/app_colors.dart';
 
@@ -14,14 +15,14 @@ class DocApp extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(375, 812),
       minTextAdapt: true,
-      child: MaterialApp(
+      child: GetMaterialApp(
         title: 'Doc App',
         theme: ThemeData(
           primaryColor: AppColors.primaryColor,
           scaffoldBackgroundColor: AppColors.white,
         ),
         debugShowCheckedModeBanner: false,
-        initialRoute: Routes.onBoardingView,
+        initialRoute: Routes.homeView,
         onGenerateRoute: appRouter.generateRoute,
       ),
     );
